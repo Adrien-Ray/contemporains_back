@@ -23,7 +23,7 @@ services:
         environment: 
             PMA_HOST: ${PREFIX_CONTAINERS}mysql
             PMA_ARBITRARY: 1
-            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_ROOT_PASSWORD: "root"
         depends_on:
             - database
 
