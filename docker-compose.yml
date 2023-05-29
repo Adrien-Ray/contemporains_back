@@ -15,6 +15,7 @@ services:
             - database
 
     phpmyadmin:
+        # login: '', 'root', 'root'
         image: phpmyadmin/phpmyadmin
         container_name: ${PREFIX_CONTAINERS}phpmyadmin
         restart: always
