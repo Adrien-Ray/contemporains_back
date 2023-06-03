@@ -38,7 +38,7 @@ services:
             - ./data/db/mysql:/var/lib/mysql
         environment:
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-            MYSQL_DATABASE: mallowz
-            MYSQL_USER: mallowz
-            MYSQL_PASSWORD: mallowz
+#            MYSQL_DATABASE: 
+#            MYSQL_USER: 
+#            MYSQL_PASSWORD: 
             TZ: Europe/Amsterdam
