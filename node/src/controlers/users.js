@@ -1,6 +1,6 @@
 module.exports = (router) => {
     // login user
-    router.post('/users/login', async (req, res) => {
+    router.get('/users', async (req, res) => {
         const rb = req.body;
         return res.status(200).json({ message: 'road of login' });
     });
