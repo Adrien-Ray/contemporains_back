@@ -36,6 +36,11 @@ app.get('/', (req, res) => {
     res.send(`Hello node ! It's ${formattedDate} o'clock`);
 });
 
+// login user
+app.post('/login', async (req, res) => {
+    // const rb = req.body
+    return res.status(200).json({ message: 'road of login' });
+});
 const router = express.Router();
 app.use('/users', router);
 require('./src/controlers/users')(app, router);

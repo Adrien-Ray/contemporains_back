@@ -1,9 +1,4 @@
 module.exports = (router) => {
-    // login user
-    router.get('/users', async (req, res) => {
-        // const rb = req.body
-        return res.status(200).json({ message: 'road of login' });
-    });
     // create user
     router.post('/users', async (req, res) => {
         return res.status(200).json({ message: 'you\'re in create user root' });
