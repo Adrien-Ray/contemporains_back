@@ -1,14 +1,14 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
     },
     "extends": "eslint:recommended",
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
     },
     rules: {
         indent: ['error', 4],
@@ -20,6 +20,7 @@ module.exports = {
         eqeqeq: 'off',
         'no-undef': 'off',
         'no-restricted-syntax': 'off',
+        "semi": ["error", "always"],
+        "comma-dangle": ["error", "always-multiline"],
     },
-
-}
+};

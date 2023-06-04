@@ -16,4 +16,4 @@ module.exports = (router) => {
     router.delete('/users/:id', async (req, res) => {
         return res.status(200).json({ message: 'road of delete user' });
     });
-}
+};
