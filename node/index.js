@@ -23,7 +23,10 @@ app.listen(port, () => {
 
 // TEST RUN ROOT
 app.get('/', (req, res) => {
-    console.log(`tu tape sur node / sombre con!`);
-    res.send('hello node in perso_www world! test nodemon');
+    console.log(`tu tape sur node / !`);
+    res.send('hello node !');
 });
 
+const router = express.Router();
+app.use('/users', router);
+require('./src/controlers/users')(app, router);
