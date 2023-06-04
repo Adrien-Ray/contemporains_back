@@ -6,7 +6,7 @@ console.info('the node date: ', today.toString());
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const mysql = require('mysql');
+// const mysql = require('mysql');
 // const { json } = require('express');
 
 const app = express();
@@ -23,6 +23,8 @@ app.listen(port, () => {
 
 // TEST RUN ROOT
 app.get('/', (req, res) => {
+
+
     console.log(`tu tape sur node / !`);
     const now = new Date();
     const year = now.getFullYear();
